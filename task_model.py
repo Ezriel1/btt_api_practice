@@ -12,10 +12,5 @@ class Task(BaseModel): #example of inheritence, it extends
     description: str
     isComplete: bool
 
-    def __init__(self, id = increment(), description = "", isComplete = False): #a constructor for python
-        self.id = id                                  #the same thing as this in Java
-        self.description = description
-        self.isComplete = isComplete
-
-        def __init__(self, **data):
-            super().__init__(id = increment(), **data)
+    def __init__(self, **data):
+        super().__init__(id = increment(), **data)
