@@ -9,8 +9,8 @@ def increment():
 
 class Task(BaseModel): #example of inheritence, it extends
     id: int
-    description: str
-    isComplete: bool
+    description: str = ""
+    isComplete: bool = False
 
     def __init__(self, **data):
-        super().__init__(id = increment(), **data)
+        super().__init__(id= increment(), **data)

@@ -16,11 +16,13 @@ def root():
 def get_all_tasks():
     return tasks
 
-@app.get("/")
-def get_task():
-    return "Hello world"
+@app.get("/get-task")
+def get_task(id):
+    for task in tasks:
+        if
+    return 
 
-@app.put("/")
+@app.put("/put-task")
 def root():
     return "Hello world"
 
@@ -28,8 +30,11 @@ def root():
 def update_task():
     return "Hello world"
 
-@app.delete("/")
-def root():
+@app.delete("/delete")    
+def delete_task(task_id = int):
+    for task in tasks:
+        if task.id == task_id:
+            tasks.remove()
     return "Hello world"
 
 @app.post("/")
