@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--in vscode you can type ! and then enter to generate the boilerplate-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BTT Task Frontend</title>
+    <script defer src="./script.js"></script>
+    <!-- the script links to the js script file -->
+  </head>
+  <body>
+    <h1>BTT API Frontend</h1>
+    <form id="taskForm">
+      <label for="description">Task Description</label>
+      <input type="text" id="description" required />
+      <button type="submit">Create Task</button>
+    </form>
+    <!-- id is a way that we can reference specific elements in our script, required means that the info is required like when you have red lines under a password in login
+    for is for seo and accesability -->
+
+    <p id="responseStatus"></p>
+  </body>
+</html>
